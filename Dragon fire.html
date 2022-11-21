@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <title>Dragon fire</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width device-width, initial-scale=1.0">
+
+    <style>
+        h1{color: rgb(22, 22, 2);text-align: center;font-family: "DragonFire";}
+        article{color: beige;margin-left: 7%;margin-right: 7%;line-height: 150%;font-family: "san_frediano_regular.ttf";font-size: 20px;}
+        section{margin-left: auto; margin-right: auto; text-align: center;}
+        header{text-align: center; width: 20%;}
+        .grid-container {
+  display: grid; grid-template-rows: auto;
+  grid-template-columns: 25% auto auto auto;
+  gap: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10%;
+  font-size: 20px;
+  
+}
+
+
+        body {
+            margin-top: auto;margin-left: 100px; margin-right: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #9c117e;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #9c117e;
+            color:#f1ebf0 ;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        main {
+            background-image: url(images/tile.jpg);margin-left: 7.5%;
+        }
+        section {align-items: center;}
+        article{text-align: var(100px);margin-left: 7%;margin-right: 7%;line-height: 150%;}
+        footer {
+        text-align: center;
+        padding: 3px;
+        color: white;
+    </style>
+}
+    
+
+    </style>
+
+
+</head>
+<main>
+
+    <body background="images/tile-sky2.jpg">
+        
+        <div class="topnav" id="myTopnav">
+            <a href="#Inicio" class="active">Inicio</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#contactar">Contactar</a>
+            <a href="#autor">Autor</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <nav>
+
+        </nav>
+        <header><img src="images/dragon1.jpg" alt=""></header>
+        <h1>En el legendario reino de Alagasia...</h1>
+        <section>"
+
+            <article>...la guerra se está gestando. Los jinetes, protectores de la paz del Imperio y los únicos capaces de
+            controlar
+            a los inteligentes dragones, se han extinguido o han pasado a formar parte de las tropas del malvado rey
+            Galbatorix. Los elfos hace tiempo que se han exiliado a un lugar oculto y los vardenos, un grupo disidente,
+            se
+            oculta en ciudades protegidas.<br></article>
+
+
+            <article>Cuando Eragon, un joven de quince años que vive en una pequeña aldea, se encuentra con una piedra preciosa
+            en
+            medio del bosque, poco se espera que este suceso vaya a cambiar su vida y el destino de Alagasia.<br>
+
+            Así comienza la apasionante tetralogía Inheritance (Legado), de Cristopher Paolini, que comenzó cuando sólo
+            tenía 15 años, y acaba de concluir recientemente.</article>
+
+        
+
+            <article> Jinetes de dragón, elfos, enanos y toda una serie de seres fantásticos, y de fondo, la eterna
+            lucha
+            del bien contra el mal."</article>,
+        </section>
+            <div class="grid-container">
+            <div><img src="images/eragon.jpg" alt=""></div>
+            <div><img src="images/eldest.jpg" alt=""></div>
+            <div><img src="images/brisingr.jpg" alt=""></div>  
+            <div><img src="images/legado.jpg" alt=""></div>
+          
+          </div>
+
+
+
+
+
+        <footer>
+            <p>Autora: Pilar Gonzalez Augusto<br>
+            examen 2020 aplicaciones web
+        Instituto campanillas</p>
+        </footer>
+</main>
+</body>
+</HTML>
